@@ -19,6 +19,8 @@ config/icon="res://icon.svg"
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+window/defaults/default_clear_color=Color(0, 0, 0, 1)
+window/default_gravity=2500.0
 
 [physics]
 
