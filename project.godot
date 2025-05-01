@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="First-godo"
-run/main_scene="uid://bith2c1wm5t2l"
+run/main_scene="uid://cl77dcg2fgnim"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
