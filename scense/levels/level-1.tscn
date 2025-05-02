@@ -4,10 +4,10 @@
 [ext_resource type="Script" uid="uid://byynqoj4x5beg" path="res://game_manager.gd" id="1_ot4ep"]
 [ext_resource type="Texture2D" uid="uid://bfl6jyexcm0o8" path="res://assets/Green.png" id="2_80hq0"]
 [ext_resource type="Texture2D" uid="uid://1601dukrfchm" path="res://assets/Terrain (16x16).png" id="3_4l73a"]
-[ext_resource type="PackedScene" uid="uid://bq0ild37hjvo8" path="res://scense/main-character.tscn" id="4_u0xgx"]
-[ext_resource type="PackedScene" uid="uid://bd22dumo2xsxn" path="res://scense/finish.tscn" id="5_ot4ep"]
-[ext_resource type="PackedScene" uid="uid://bith2c1wm5t2l" path="res://scense/level-2.tscn" id="6_80hq0"]
-[ext_resource type="PackedScene" uid="uid://v2sgwb5rgu48" path="res://scense/collectable_cherries.tscn" id="6_r8x4a"]
+[ext_resource type="PackedScene" uid="uid://bq0ild37hjvo8" path="res://scense/componenets/main-character.tscn" id="4_u0xgx"]
+[ext_resource type="PackedScene" uid="uid://bd22dumo2xsxn" path="res://scense/componenets/finish.tscn" id="5_ot4ep"]
+[ext_resource type="PackedScene" uid="uid://bith2c1wm5t2l" path="res://scense/levels/level-2.tscn" id="6_80hq0"]
+[ext_resource type="PackedScene" uid="uid://v2sgwb5rgu48" path="res://scense/componenets/collectable_cherries.tscn" id="6_r8x4a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tda05"]
 texture = ExtResource("3_4l73a")

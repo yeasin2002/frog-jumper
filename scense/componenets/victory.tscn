@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://didff72w6w24l"]
 
-[ext_resource type="Script" uid="uid://bt1e2l1iti6rl" path="res://scense/victory.gd" id="1_h1280"]
+[ext_resource type="Script" uid="uid://bt1e2l1iti6rl" path="res://scripts/victory.gd" id="1_h1280"]
 [ext_resource type="Texture2D" uid="uid://daw13ltkfmnhy" path="res://assets/victory-background.jpg" id="1_ot640"]
 
 [node name="Victory" type="Control"]

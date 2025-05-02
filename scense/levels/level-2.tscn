@@ -3,9 +3,9 @@
 [ext_resource type="Script" uid="uid://byynqoj4x5beg" path="res://game_manager.gd" id="1_xkliy"]
 [ext_resource type="Texture2D" uid="uid://coq0h3vdind4k" path="res://assets/Pixel Adventure 1/Background/Brown.png" id="2_ptcma"]
 [ext_resource type="Texture2D" uid="uid://1601dukrfchm" path="res://assets/Terrain (16x16).png" id="3_a2qa4"]
-[ext_resource type="PackedScene" uid="uid://bq0ild37hjvo8" path="res://scense/main-character.tscn" id="4_cp7yu"]
-[ext_resource type="PackedScene" uid="uid://bd22dumo2xsxn" path="res://scense/finish.tscn" id="5_l4hbx"]
-[ext_resource type="PackedScene" uid="uid://didff72w6w24l" path="res://scense/victory.tscn" id="6_l4hbx"]
+[ext_resource type="PackedScene" uid="uid://bq0ild37hjvo8" path="res://scense/componenets/main-character.tscn" id="4_cp7yu"]
+[ext_resource type="PackedScene" uid="uid://bd22dumo2xsxn" path="res://scense/componenets/finish.tscn" id="5_l4hbx"]
+[ext_resource type="PackedScene" uid="uid://didff72w6w24l" path="res://scense/componenets/victory.tscn" id="6_l4hbx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tda05"]
 texture = ExtResource("3_a2qa4")
