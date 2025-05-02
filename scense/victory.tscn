@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://didff72w6w24l"]
+
+[ext_resource type="Script" uid="uid://bt1e2l1iti6rl" path="res://scense/victory.gd" id="1_h1280"]
+[ext_resource type="Texture2D" uid="uid://daw13ltkfmnhy" path="res://assets/victory-background.jpg" id="1_ot640"]
+
+[node name="Victory" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h1280")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 34.0
+offset_top = 11.0
+offset_right = -6.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ot640")
+expand_mode = 1
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 378.0
+offset_top = 195.0
+offset_right = 743.0
+offset_bottom = 240.0
+text = "You Have Completed All the levels, "
+
+[node name="ExitGame_btn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 367.0
+offset_top = 533.0
+offset_right = 785.0
+offset_bottom = 610.0
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "Exit Game"
