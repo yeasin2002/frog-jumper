@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://d1tr6egfnox5i"]
+[gd_scene load_steps=32 format=3 uid="uid://d1tr6egfnox5i"]
 
 [ext_resource type="Texture2D" uid="uid://bjh4dfxpmkumr" path="res://assets/Pixel Adventure 1/Items/Checkpoints/Start/Start (Moving) (64x64).png" id="1_1gvxs"]
 [ext_resource type="Script" uid="uid://byynqoj4x5beg" path="res://game_manager.gd" id="1_ot4ep"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bd22dumo2xsxn" path="res://scense/componenets/finish.tscn" id="5_ot4ep"]
 [ext_resource type="PackedScene" uid="uid://bith2c1wm5t2l" path="res://scense/levels/level-2.tscn" id="6_80hq0"]
 [ext_resource type="PackedScene" uid="uid://v2sgwb5rgu48" path="res://scense/componenets/collectable_cherries.tscn" id="6_r8x4a"]
+[ext_resource type="PackedScene" uid="uid://bg3cp5bns8b5" path="res://scense/enemies/chicken.tscn" id="9_hixpp"]
 [ext_resource type="Texture2D" uid="uid://cs1aact8rqdab" path="res://assets/coin.png" id="9_wc6n0"]
 [ext_resource type="Texture2D" uid="uid://ckp4qc2hrbvht" path="res://assets/heart.png" id="10_hixpp"]
 
@@ -458,6 +459,10 @@ sprite_frames = SubResource("SpriteFrames_7gpg7")
 autoplay = "default"
 frame_progress = 0.758066
 
+[node name="enemies" type="Node" parent="sceneObject"]
+
+[node name="chicken" parent="sceneObject/enemies" instance=ExtResource("9_hixpp")]
+
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="Panel" type="Panel" parent="UI"]
@@ -472,10 +477,10 @@ pivot_offset = Vector2(-3.02677, -16.9533)
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.481716
-anchor_top = 0.330834
-anchor_right = 0.731716
-anchor_bottom = 0.905834
+anchor_left = 0.584902
+anchor_top = 0.367688
+anchor_right = 0.834902
+anchor_bottom = 0.942688
 grow_horizontal = 0
 grow_vertical = 2
 scale = Vector2(0.454116, 0.55774)
@@ -484,10 +489,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="UI/Panel"]
 layout_mode = 0
-offset_left = 5.23544
-offset_top = 12.4962
-offset_right = 10.2354
-offset_bottom = 24.4962
+offset_left = 6.61125
+offset_top = 13.9704
+offset_right = 11.6112
+offset_bottom = 25.9704
 texture = ExtResource("9_wc6n0")
 expand_mode = 1
 
@@ -497,11 +502,34 @@ offset_top = 10.0
 offset_right = 372.0
 offset_bottom = 61.0
 
-[node name="TextureRect" type="TextureRect" parent="UI/hearts"]
-layout_mode = 0
-offset_left = 10.0
-offset_top = 13.0
-offset_right = 43.0
-offset_bottom = 38.0
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/hearts"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/hearts/HBoxContainer"]
+layout_mode = 2
 texture = ExtResource("10_hixpp")
-expand_mode = 1
+expand_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="UI/hearts/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("10_hixpp")
+expand_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="UI/hearts/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("10_hixpp")
+expand_mode = 2
+
+[node name="chicken" parent="." instance=ExtResource("9_hixpp")]
+position = Vector2(-570, -383)
+
+[node name="chicken2" parent="." instance=ExtResource("9_hixpp")]
+position = Vector2(672, -15)
+
+[node name="chicken3" parent="." instance=ExtResource("9_hixpp")]
+position = Vector2(1718, -301)
